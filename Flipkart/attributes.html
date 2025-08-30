@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!--ATTRIBUTES-->
+        <!--<input type="text" autofocus>
+        <input type="number" min="2" max="10">
+        <input type="text" minlength="6" maxlength="8" required >
+        <input type="submit" disabled>
+       <input type="text" placeholder="enter number">
+       <input type="number" autofocus>-->
+
+       <!--<input type="radio" id="male" name="gender" >
+       <label for="male">Male</label>
+       <br>
+       <input type="radio" id="female" name="gender">
+       <label for="male">Female</label>-->
+       
+
+    <!-- Registartion Form -->
+       <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .form-container {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        .submit-btn {
+            text-align: center;
+        }
+        .submit-btn input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Registration Form</h3>
+        <form action="success.html" method="get">
+            <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" placeholder="Enter Firstname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" placeholder="Enter Lastname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date Of Birth</label></td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" placeholder="Enter Password" maxlength="8"></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type="text" minlength="10" maxlength="10" placeholder="Enter Mobile No" required></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><input type="text" placeholder="Enter Permanent Address" required></td>
+                </tr>
+                <tr>
+                    <td><label>Course</label></td>
+                    <td>
+                        <select required>
+                            <option value="">-- Select Course --</option>
+                            <option value="cse">Computer Science</option>
+                            <option value="ece">Electronics</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="civil">Civil</option>
+                            <option value="it">Information Technology</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Duration (Weeks)</label></td>
+                    <td>
+                        <select required>
+                            <option value="">-- Select Duration --</option>
+                            <option value="8">8 Weeks</option>
+                            <option value="12">12 Weeks</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Mode</label></td>
+                    <td>
+                        <select required>
+                            <option value="">-- Select Mode --</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Payment Type</label></td>
+                    <td>
+                        <select required>
+                            <option value="">-- Select Payment --</option>
+                            <option value="upi">UPI</option>
+                            <option value="cash">Cash</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-btn">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
